@@ -100,6 +100,10 @@ header {
       color: #fff;
       text-decoration: none;
     }
+
+    a:hover {
+      color: #0077c3;
+    }
   }
 }
 
@@ -112,9 +116,19 @@ header {
 /* kv */
 .kv {
   height: 763px;
-  background: url("../images/kv01.jpg") no-repeat center center;
-  background-size: 120% 120%;
   position: relative;
+  overflow: hidden;
+
+  .kv-bg-wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 763px;
+  }
+  .kv-bg {
+    height: 763px;
+    background: url("../images/kv01.jpg") no-repeat center top;
+  }
 
   .layout {
     position: relative;
@@ -122,10 +136,24 @@ header {
     .fly {
       position: absolute;
       right: -46px;
-      top: 168px;
+      bottom: 30px;
+      width: 0;
+      height: 0;
+      opacity: .1;
+      .transition(all, 1.5s);
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .fly.animated {
+      right: -46px;
+      bottom: -168px;
       width: 626px;
       height: 355px;
-      background: url("../images/kv-inspire.png") no-repeat;
+      opacity: 1;
     }
   }
 }
@@ -194,6 +222,16 @@ header {
     margin-top: 34px;
   }
 
+  main {
+    img {
+      .transition(all, .25s);
+    }
+
+    img:hover {
+      margin-right: 5px;
+    }
+  }
+
   .item01 {
     margin-top: 25px;
 
@@ -228,9 +266,11 @@ header {
   }
 
   .kv02 {
-    height: 597px;
+    height: 900px;
     margin-top: 74px;
-    background: url("../images/kv02.jpg") no-repeat center top;
+    background: url("../images/kv02.jpg") no-repeat center bottom;
+    background-size: cover;
+    background-attachment: fixed;
   }
 }
 
@@ -309,7 +349,6 @@ footer {
     }
   }
 }
-
 .footer-copyright {
   line-height: 64px;
   color: #fff;
