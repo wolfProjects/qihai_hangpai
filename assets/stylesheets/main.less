@@ -1,0 +1,98 @@
+/* Qianglong Mo (SukeBeta) 2015 */
+
+/*======================================================================
+      Global
+  ======================================================================*/
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.layout {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.font-smooth {
+  -webkit-font-smoothing: antialiased;
+}
+
+/*======================================================================
+      Function
+  ======================================================================*/
+
+.box-sizing(@value){
+  -webkit-box-sizing: @value;
+  -moz-box-sizing: @value;
+  box-sizing: @value
+}
+
+
+.transition(@key:all, @duration:.2s){
+  -webkit-transition: @key @duration;
+  -moz-transition: @key @duration;
+  -ms-transition: @key @duration;
+  -o-transition: @key @duration;
+  transition: @key @duration;
+}
+
+.transform(@property){
+  -webkit-transform: @property;
+  -moz-transform: @property;
+  -ms-transform: @property;
+  -o-transform: @property;
+  transform: @property;
+}
+
+.transform-origin(@origin){
+  -webkit-transform-origin: @origin;
+  -moz-transform-origin: @origin;
+  -ms-transform-origin: @origin;
+  -o-transform-origin: @origin;
+  transform-origin: @origin;
+}
+
+.box-shadow(@x, @y, @size, @color){
+  box-shadow: @x @y @size @color;
+  -webkit-box-shadow: @x @y @size @color;
+  -moz-box-shadow: @x @y @size @color;
+  -o-box-shadow: @x @y @size @color;
+  -ms-box-shadow: @x @y @size @color;
+}
+
+.animation(@name, @seconds, @style, @totaltime) {
+  animation: @name @seconds @style @totaltime;
+  -ms-animation: @name @seconds @style @totaltime;
+  -webkit-animation: @name @seconds @style @totaltime;
+  -moz-animation: @name @seconds @style @totaltime;
+  -o-animation: @name @seconds @style @totaltime;
+}
+
+/*======================================================================
+      Main
+  ======================================================================*/
+/* header */
+header {
+}
+
+/* footer */
+footer {
+}
+
+/*======================================================================
+      Responsive
+  ======================================================================*/
+
+@media screen and (max-width: 1260px){
+}
