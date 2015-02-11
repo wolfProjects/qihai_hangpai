@@ -9,8 +9,11 @@ html {
 }
 
 body {
+  min-width: 1190px;
   padding: 0;
   margin: 0;
+  .font-smooth;
+  font-family: "Helvetica Neue", 'Microsoft YaHei', '微软雅黑', Arial,  Helvetica, sans-serif;
 }
 
 li {
@@ -18,8 +21,7 @@ li {
 }
 
 .layout {
-  max-width: 1170px;
-  padding: 0 15px;
+  max-width: 1190px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -82,12 +84,238 @@ li {
 /*======================================================================
       Main
   ======================================================================*/
+
 /* header */
 header {
+  height: 94px;
+  background: #121212;
+
+  /* nav */
+  nav {
+    padding: 38px 0 0 220px;
+
+    a {
+      margin: 0 13px;
+      font-size: 22px;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
 }
+
+.header-logo {
+  width: 253px;
+  height: 94px;
+  background: url("../images/header-logo.png") no-repeat;
+}
+
+/* kv */
+.kv {
+  height: 763px;
+  background: url("../images/kv01.jpg") no-repeat center center;
+  background-size: 120% 120%;
+  position: relative;
+
+  .layout {
+    position: relative;
+
+    .fly {
+      position: absolute;
+      right: -46px;
+      top: 168px;
+      width: 626px;
+      height: 355px;
+      background: url("../images/kv-inspire.png") no-repeat;
+    }
+  }
+}
+
+.kv-mask{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: url("../images/kv-mask-out.png") repeat-x;
+}
+
+.kv-mask-inner{
+  height: 59px;
+  background: url("../images/kv-mask-inner.png") no-repeat center bottom;
+}
+
+/* section begin */
+.section {}
+.section-title {
+  height: 124px;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+/* section 01 */
+.section01{
+  padding: 38px 0 85px 0;
+  background: #e6e6e6;
+
+  .section-title {
+    background-image: url("../images/index-title01.png");
+  }
+}
+
+/* product */
+.product {
+  .item {
+
+  }
+
+  aside {
+    width: 375px;
+  }
+
+  dl {
+    dt {
+      margin-bottom: 4px;
+      font-size: 40px;
+      color: #0058e2;
+    }
+
+    dd {
+      font-size: 24px;
+      color: #000;
+    }
+  }
+
+  .desc {
+    margin-top: 28px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+  }
+
+  .btn-more {
+    margin-top: 34px;
+  }
+
+  .item01 {
+    margin-top: 25px;
+
+    dl {
+      margin-top: 60px;
+    }
+  }
+
+  .item02 {
+    margin-top: 115px;
+
+    dl {
+      margin-top: 128px;
+    }
+  }
+
+  .item03 {
+    margin-top: 120px;
+
+    dl {
+      margin-top: 100px;
+    }
+  }
+}
+
+/* section 02 */
+.section02{
+  padding: 42px 0 0 0;
+
+  .section-title {
+    background-image: url("../images/index-title02.png");
+  }
+
+  .kv02 {
+    height: 597px;
+    margin-top: 74px;
+    background: url("../images/kv02.jpg") no-repeat center top;
+  }
+}
+
+/* service */
+.service {
+  margin: 50px 0 0 108px;
+  color: #3e3a39;
+
+  dt {
+    font-size: 28px;
+    margin-bottom: 22px;
+  }
+
+  dd {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+/* button */
+.btn-more {
+  display: inline-block;
+  width: 121px;
+  height: 39px;
+  background: url("../images/btn-more.png") no-repeat;
+}
+
+/* section 03 */
+.section03{
+  padding: 20px 0 63px 0;
+  background: #f2f1ec;
+
+  .desc {
+    padding: 52px 0 36px 0;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+  }
+
+  .section-title {
+    background-image: url("../images/index-title03.png");
+  }
+
+  .kv02 {
+    height: 597px;
+    margin-top: 74px;
+    background: url("../images/kv02.jpg") no-repeat center top;
+  }
+}
+
 
 /* footer */
 footer {
+  padding: 28px 0 0 0;
+  background: #037ed9;
+}
+
+.footer-title {
+  height: 124px;
+  background: url("../images/footer-title.png") no-repeat center top;
+}
+
+.footer-info {
+  margin: 50px 0 58px 0;
+
+  li {
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+
+    img, span {
+      vertical-align: middle;
+    }
+
+    img {
+      margin-right: 12px;
+    }
+  }
+}
+
+.footer-copyright {
+  line-height: 64px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  background: #034677;
 }
 
 /*======================================================================
